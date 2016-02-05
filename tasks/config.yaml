@@ -14,9 +14,9 @@
 ---
 - name: Download
   get_url:
-    dest: /var/lib/jenkins/plugins/
-    url: https://updates.jenkins-ci.org/latest/{{ item }}.hpi
+    dest: "{{ jenkins_config_home }}/plugins/"
+    url: "https://updates.jenkins-ci.org/download/plugins/{{ item.name }}/{{ item.version | default('latest') }}/{{ item.name }}.hpi"
   with_items:
-    - "{{ jenkins_plugins_list }}"
+    - "{{ jenkins_plugins_manager }}"
   notify:
     - Restart jenkins
