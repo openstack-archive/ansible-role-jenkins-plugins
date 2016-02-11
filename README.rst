@@ -1,6 +1,6 @@
-===========================
+============================
 ansible-role-jenkins-plugins
-===========================
+============================
 
 Ansible role to manage Jenkins plugins
 
