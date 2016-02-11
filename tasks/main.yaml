@@ -13,4 +13,4 @@
 # under the License.
 ---
 - include: config.yaml
-  sudo: yes
+  become: yes
