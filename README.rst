@@ -27,6 +27,10 @@ Role Variables
 Dependencies
 ------------
 
+ansible-role-jenkins
+~~~~~~~~~~~~~~~~~~~~
+See http://ansible-role-jenkins.readthedocs.org/ for more information.
+
 Example Playbook
 ----------------
 
