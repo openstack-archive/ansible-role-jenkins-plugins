@@ -12,10 +12,10 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 ---
-- name: Download
+- name: Download plugins.
   get_url:
     dest: "{{ jenkins_config_home }}/plugins/"
-    url: "https://updates.jenkins-ci.org/download/plugins/{{ item.name }}/{{ item.version | default('latest') }}/{{ item.name }}.hpi"
+    url: "{{ jenkins_plugins_url }}{{ item.name }}/{{ item.version | default('latest') }}/{{ item.name }}.hpi"
   with_items:
     - "{{ jenkins_plugins_manager }}"
   notify:
