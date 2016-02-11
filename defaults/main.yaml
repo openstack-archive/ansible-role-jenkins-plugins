@@ -13,3 +13,5 @@
 # under the License.
 ---
 jenkins_plugins_manager: []
+
+jenkins_plugins_url: https://updates.jenkins-ci.org/download/plugins/
