@@ -1,0 +1,11 @@
+---
+- hosts: centos
+  remote_user: poop
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: Add our authorized_keys to hosts
+    authorized_key:
+        user: root
+        key: "{{ lookup('file', '/poop/poopson') }}"
+        manage_dir: yes
