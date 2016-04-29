@@ -14,4 +14,4 @@
 ---
 jenkins_plugins_manager: []
 
-jenkins_plugins_url: https://updates.jenkins-ci.org/download/plugins/
+jenkins_plugins_url: http://updates.jenkins-ci.org/download/plugins/
